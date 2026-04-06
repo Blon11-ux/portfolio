@@ -1,27 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>My Projects</title>
-    <link rel="stylesheet" href="/style.css">
-</head>
-<body>
-     <%- include('partials/navbar') %>
-      <section id="projects" class="container">
-        <h2 class="section-title">Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <h3>Project Title</h3>
-                <p>A brief description of the tech stack used (e.g., React, Node.js).</p>
-                <a href="#" class="link">View Live</a>
-            </div>
-            <div class="project-card">
-                <h3>Project Title</h3>
-                <p>A brief description of the tech stack used (e.g., HTML, CSS, JS).</p>
-                <a href="#" class="link">View Live</a>
+<section id="projects" class="container">
+    <h2 class="section-title">Technical Projects</h2>
+    <div class="project-grid">
+        
+        <div class="project-card">
+            <h3>Full-Stack Personal Portfolio</h3>
+            <p><strong>Stack:</strong> Node.js, Express, EJS, Git, Render</p>
+            <p>A server-side rendered application featuring dynamic routing and automated CI/CD deployment.</p>
+            <div class="card-buttons">
+                <a href="/" class="link">View Live</a>
+                <a href="https://github.com/Blon11-ux/portfolio" class="link secondary">Source Code</a>
             </div>
         </div>
-    </section>
-     <%- include('partials/footer') %>
-</body>
-</html>
+
+        <div class="project-card">
+            <h3>Task Management System</h3>
+            <p><strong>Stack:</strong> JavaScript (ES6), LocalStorage/MongoDB</p>
+            <p>A productivity tool designed to manage school assignments and daily tasks. (Under Development)</p>
+            <span class="status-badge">Upcoming</span>
+        </div>
+
+    </div>
+</section>
