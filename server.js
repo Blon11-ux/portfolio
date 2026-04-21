@@ -1,24 +1,13 @@
-const express= require('express')
+const express = require('express')
 const path = require('path')
 const app = express()
-const port = 3000;
+const port = process.env.PORT || 3000; // ✅ fixes Render deployment
 
-app.set('view engine','ejs');
+app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')))
 
-
 app.get('/', (req, res) => {
-    res.render('index', {name:'BLON TAMANG BIPIN'});
-});
-
-app.get('/projects', (req, res) => {
-    res.render('projects'); 
-});
-app.get('/contact', (req, res) => {
-    res.render('contact'); 
-});
-app.get('/about', (req, res) => {
-    res.render('about'); 
+    res.render('index', { name: 'BLON TAMANG BIPIN' });
 });
 
 app.listen(port, () => {
