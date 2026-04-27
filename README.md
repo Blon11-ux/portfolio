@@ -78,29 +78,5 @@ npm install
 
 # 4. 開発サーバーを起動
 node app.js
-```
 
-起動後、ブラウザで `http://localhost:3000` を開いてください。
 
----
-
-## 🌍 デプロイについて
-
-このプロジェクトは **[Render](https://render.com)** にデプロイされており、CI/CDにより自動デプロイを実現しています。  
-`main`ブランチへプッシュするたびに自動的に最新版が反映されます。
-
-**公開URL：** [https://memoapp-8eb2.onrender.com](https://memoapp-8eb2.onrender.com)
-
----
-
-## 👤 作者
-
-**Bipin**  
-email: [blontamang4@gmail.com]  
-GitHub：[@Blon11-ux](https://github.com/Blon11-ux)  
-
----
-
-## 📄 ライセンス
-
-このプロジェクトは MITライセンス のもとで公開されています。
