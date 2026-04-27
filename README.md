@@ -1,110 +1,111 @@
-# 🌐 Bipin's Web Portfolio — Node.js & EJS
+# 🌐 Bipinのウェブポートフォリオ — Node.js & EJS
 
-A professional, server-side rendered (SSR) portfolio website built to showcase my web development journey, technical projects, and skills as an aspiring full-stack developer.
+Node.jsとEJSを使用したサーバーサイドレンダリング（SSR）ポートフォリオサイトです。
+Web開発の学習成果・制作物・技術スキルを紹介しています。
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Online-brightgreen)](https://memoapp-8eb2.onrender.com)
-[![Node.js](https://img.shields.io/badge/Node.js-Runtime-green)](https://nodejs.org)
-[![Express.js](https://img.shields.io/badge/Express.js-Framework-lightgrey)](https://expressjs.com)
-[![License](https://img.shields.io/badge/License-MIT-blue)](#)
-
----
-
-## 📸 Preview
-
-> Visit the live site: [https://memoapp-8eb2.onrender.com](https://memoapp-8eb2.onrender.com)
+[![ライブデモ](https://img.shields.io/badge/ライブデモ-公開中-brightgreen)](https://memoapp-8eb2.onrender.com)
+[![Node.js](https://img.shields.io/badge/Node.js-ランタイム-green)](https://nodejs.org)
+[![Express.js](https://img.shields.io/badge/Express.js-フレームワーク-lightgrey)](https://expressjs.com)
+[![License](https://img.shields.io/badge/ライセンス-MIT-blue)](#)
 
 ---
 
-## ✨ Features
+## 📸 プレビュー
 
-- **Server-Side Rendering (SSR)** — Pages rendered with EJS for fast, SEO-friendly delivery
-- **Responsive Design** — Fully optimized for both mobile and desktop using CSS Flexbox & Grid
-- **Reusable Partials** — Modular EJS components (Navbar, Footer) for clean, maintainable code
-- **Dynamic Routing** — Express.js handles routing cleanly and efficiently
-- **CI/CD Deployment** — Automatically deployed to Render on every push to `main`
-- **Git Version Control** — Full project history managed with GitHub
+> ライブサイトはこちら：[https://memoapp-8eb2.onrender.com](https://memoapp-8eb2.onrender.com)
 
 ---
 
-## 🛠 Tech Stack
+## ✨ 主な機能
 
-| Category         | Technology                        |
-|------------------|-----------------------------------|
-| Runtime          | Node.js                           |
-| Framework        | Express.js                        |
-| Template Engine  | EJS (Embedded JavaScript)         |
-| Styling          | CSS3 (Flexbox & Grid)             |
-| Deployment       | Render (CI/CD)                    |
-| Version Control  | Git / GitHub                      |
+- **サーバーサイドレンダリング（SSR）** — EJSによる高速・SEOフレンドリーなページ生成
+- **レスポンシブデザイン** — CSS FlexboxとGridを使用し、スマートフォン・PC両対応
+- **再利用可能なパーシャル** — ナビゲーションバー・フッターをEJSコンポーネントとして分離
+- **動的ルーティング** — Express.jsによるシンプルで拡張しやすいルーティング設計
+- **CI/CDデプロイ** — `main`ブランチへのプッシュで自動的にRenderへデプロイ
+- **Gitによるバージョン管理** — GitHubで開発履歴を管理
 
 ---
 
-## 📁 Project Structure
+## 🛠 使用技術
+
+| カテゴリ             | 技術                          |
+|----------------------|-------------------------------|
+| ランタイム           | Node.js                       |
+| フレームワーク       | Express.js                    |
+| テンプレートエンジン | EJS（Embedded JavaScript）    |
+| スタイリング         | CSS3（Flexbox & Grid）        |
+| デプロイ             | Render（CI/CD）               |
+| バージョン管理       | Git / GitHub                  |
+
+---
+
+## 📁 ディレクトリ構成
 
 ```
 portfolio/
-├── views/                  # EJS templates
+├── views/                  # EJSテンプレート
 │   ├── partials/
-│   │   ├── navbar.ejs      # Reusable navigation bar
-│   │   └── footer.ejs      # Reusable footer
-│   └── index.ejs           # Main portfolio page
-├── public/                 # Static assets
-│   ├── css/                # Stylesheets
-│   └── images/             # Images & icons
-├── app.js                  # Express server entry point
-└── package.json            # Project dependencies
+│   │   ├── navbar.ejs      # 共通ナビゲーションバー
+│   │   └── footer.ejs      # 共通フッター
+│   └── index.ejs           # メインポートフォリオページ
+├── public/                 # 静的ファイル
+│   ├── css/                # スタイルシート
+│   └── images/             # 画像・アイコン
+├── app.js                  # Expressサーバーのエントリーポイント
+└── package.json            # 依存関係
 ```
 
 ---
 
-## 🚀 Getting Started (Run Locally)
+## 🚀 ローカルでの実行方法
 
-### Prerequisites
-- [Node.js](https://nodejs.org/) v18 or higher
-- npm (comes with Node.js)
+### 必要な環境
+- [Node.js](https://nodejs.org/) v18 以上
+- npm（Node.jsに同梱）
 
-### Installation
+### セットアップ手順
 
 ```bash
-# 1. Clone the repository
+# 1. リポジトリをクローン
 git clone https://github.com/Blon11-ux/portfolio.git
 
-# 2. Navigate into the project folder
+# 2. プロジェクトフォルダに移動
 cd portfolio
 
-# 3. Install dependencies
+# 3. 依存パッケージをインストール
 npm install
 
-# 4. Start the development server
+# 4. 開発サーバーを起動
 node app.js
 ```
 
-Then open your browser and visit: `http://localhost:3000`
+起動後、ブラウザで `http://localhost:3000` を開いてください。
 
 ---
 
-## 🌍 Deployment
+## 🌍 デプロイについて
 
-This project is deployed on **[Render](https://render.com)** with automatic CI/CD.  
-Every push to the `main` branch triggers an automatic redeploy.
+このプロジェクトは **[Render](https://render.com)** にデプロイされており、CI/CDにより自動デプロイを実現しています。  
+`main`ブランチへプッシュするたびに自動的に最新版が反映されます。
 
-**Live URL:** [https://memoapp-8eb2.onrender.com](https://memoapp-8eb2.onrender.com)
+**公開URL：** [https://memoapp-8eb2.onrender.com](https://memoapp-8eb2.onrender.com)
 
 ---
 
-## 👤 Author
+## 👤 作者
 
 **Bipin**  
-📧 [Your Email Here]  
-🐙 GitHub: [@Blon11-ux](https://github.com/Blon11-ux)  
-🌏 Based in Hokkaido, Japan
+📧 [メールアドレスをここに記入]  
+🐙 GitHub：[@Blon11-ux](https://github.com/Blon11-ux)  
+🌏 北海道在住
 
 ---
 
-## 📄 License
+## 📄 ライセンス
 
-This project is licensed under the MIT License.
+このプロジェクトは MITライセンス のもとで公開されています。
 
 ---
 
-> *Built with passion and curiosity as part of my journey into web development in Japan. 🇯🇵*
+> *日本でのWeb開発の学びの集大成として、情熱を持って制作しました。🇯🇵*
