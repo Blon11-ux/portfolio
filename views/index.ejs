@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio | Web Developer</title>
+    <meta name="description" content="BipinのWebポートフォリオ。Node.js・Express・EJSを使ったサーバーサイド開発を学ぶエンジニア志望。">
+    <title>Bipin | Webエンジニア志望ポートフォリオ</title>
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -11,69 +12,75 @@
 
     <header class="hero">
         <h1>Hi, I'm <span class="highlight"><%= name %></span>.</h1>
-        <p>A Web Developer specializing in clean code and functional design.</p>
-        <a href="#projects" class="btn">View My Work</a>
+        <p>ネパール出身、北海道在住のWebエンジニア志望。<br>
+        Node.jsとExpress.jsでサーバーサイド開発を学んでいます。</p>
+        <a href="#projects" class="btn">制作物を見る</a>
     </header>
 
     <main class="page-container">
 
         <section id="about" class="container">
             <div class="about-hero">
-                <h2>About <span class="highlight">Bipin</span></h2>
-                <p>Building the web, one route at a time.</p>
+                <h2><span class="highlight">Bipin</span> について</h2>
+                <p>一つひとつのルートに、想いを込めて。</p>
             </div>
             <div class="about-grid">
                 <div class="bio-text">
-                    <h3>My Story</h3>
-                    <p>バックエンドのロジックとフロントエンドの開発に興味を持つWebエンジニアです。
+                    <h3>自己紹介</h3>
+                    <p>バックエンドのロジックとフロントエンドの開発に興味を持つWebエンジニア志望です。
                     Node.jsでポートフォリオを構築し、ExpressやEJSなどの技術を学びながら、
-                    保守性の高いコードを書くことを大切にしています。</p>
+                    保守性の高いコードを書くことを大切にしています。
+                    ネパール出身で、来日後に日本語を習得。異文化への適応力と粘り強さを強みに、
+                    日本のIT業界でエンジニアとして成長していきたいと考えています。</p>
                 </div>
                 <div class="skills-container">
-                    <h3>Tech Stack</h3>
+                    <h3>技術スタック</h3>
                     <ul class="skills-list">
-                        <li class="skill-tag">Next.js/React</li>
                         <li class="skill-tag">Node.js</li>
-                        <li class="skill-tag">Express</li>
+                        <li class="skill-tag">Express.js</li>
                         <li class="skill-tag">EJS</li>
                         <li class="skill-tag">JavaScript (ES6)</li>
-                        <li class="skill-tag">CSS3 / Flexbox</li>
+                        <li class="skill-tag">CSS3 / Flexbox / Grid</li>
                         <li class="skill-tag">Git & GitHub</li>
+                        <li class="skill-tag">Render (CI/CD)</li>
                     </ul>
                 </div>
             </div>
         </section>
 
         <section id="projects" class="container">
-            <h2 class="section-title">Technical Projects</h2>
+            <h2 class="section-title">制作物</h2>
             <div class="project-grid">
 
                 <div class="project-card">
-                    <h3>Full-Stack Personal Portfolio</h3>
-                    <p><strong>Stack:</strong> Node.js, Express, EJS, Git, Render</p>
-                    <p>A server-side rendered application featuring dynamic routing and automated CI/CD deployment.</p>
+                    <h3>個人ポートフォリオサイト</h3>
+                    <p><strong>使用技術：</strong> Node.js / Express.js / EJS / Git / Render</p>
+                    <p>サーバーサイドレンダリング（SSR）を採用した本ポートフォリオサイト。
+                    動的ルーティングとRenderを使ったCI/CD自動デプロイを実装しています。</p>
                     <div class="card-buttons">
-                        <a href="https://memoapp-8eb2.onrender.com" class="link" target="_blank" rel="noopener noreferrer">View Live</a>
-                        <a href="https://github.com/Bipin/portfolio" class="link secondary" target="_blank" rel="noopener noreferrer">Source Code</a>
+                        <a href="https://memoapp-8eb2.onrender.com" class="link" target="_blank" rel="noopener noreferrer">ライブで見る</a>
+                        <a href="https://github.com/Blon11-ux/portfolio" class="link secondary" target="_blank" rel="noopener noreferrer">ソースコード</a>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <h3>Task Management System</h3>
-                    <p><strong>Stack:</strong> JavaScript (ES6), LocalStorage/MongoDB</p>
-                    <p>A productivity tool designed to manage school assignments and daily tasks. (Under Development)</p>
-                    <span class="status-badge">Upcoming</span>
+                    <h3>タスク管理アプリ（開発中）</h3>
+                    <p><strong>使用技術：</strong> JavaScript (ES6) / LocalStorage</p>
+                    <p>学校の課題や日々のタスクを管理するための生産性ツール。
+                    ブラウザのLocalStorageを活用したデータ永続化を実装予定。現在開発中。</p>
+                    <span class="status-badge">開発中</span>
                 </div>
 
             </div>
         </section>
 
         <section id="contact" class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p>I'm currently looking for new opportunities!</p>
+            <h2 class="section-title">お問い合わせ</h2>
+            <p>現在、就職・インターンの機会を探しています。お気軽にご連絡ください！</p>
             <div class="contact-buttons">
-                <a href="mailto:bipin@email.com" class="btn">Email Me</a>
-                <a href="tel:+1234567890" class="btn">+1 (234) 567-890</a>
+                <a href="mailto:あなたのメールアドレス@gmail.com" class="btn">メールを送る</a>
+                <a href="tel:080-XXXX-XXXX" class="btn">080-XXXX-XXXX</a>
+                <a href="https://github.com/Blon11-ux" class="btn" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
         </section>
 
