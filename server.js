@@ -8,12 +8,12 @@ app.set('views', path.join(__dirname, 'views')); // explicit views folder
 app.use(express.static(path.join(__dirname, 'public')))
 
 app.get('/', (req, res) => {
-    res.render('index', { name: 'Bipin' }); // shorter looks better in the hero
+    res.render('index', { name: 'ブロン タマン ビピン' }); // shorter looks better in the hero
 });
 
 // 404 handler
 app.use((req, res) => {
-    res.status(404).render('index', { name: 'Bipin' });
+    res.status(404).render('index', { name: 'ブロン タマン ビピン' });
 });
 
 app.listen(port, () => {
