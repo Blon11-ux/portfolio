@@ -14,13 +14,14 @@
     <%- include('partials/navbar') %>
 
     <header class="hero">
-        
-        <h1>こにちは, 私は <span class="highlight"><%= name %></span>.</h1>
-        <p>ネパール出身、北海道サイバーズクリエイティブ大学校。<br>
-        情報システム2年として学んでいます。</p>  
+        <div class="hero-badge">情報システム科 2年 · ネパール出身</div>
+        <h1>こんにちは、私は <span class="highlight"><%= name %></span> です。</h1>
+        <p>北海道サイバーズクリエイティブ大学校にて学ぶ<br>
+        Webエンジニア志望。サーバーサイド開発に情熱を注いでいます。</p>
         <div class="hero-ctas">
             <a href="#projects" class="btn">制作物を見る</a>
             <a href="#contact" class="btn ghost">お問い合わせ</a>
+            <a href="https://github.com/Blon11-ux" class="btn ghost" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
     </header>
 
@@ -31,28 +32,84 @@
                 <h2><span class="highlight">Bipin</span> について</h2>
                 <p>一つひとつのルートに、想いを込めて。</p>
             </div>
+
             <div class="about-grid">
+
                 <div class="bio-text reveal">
                     <h3>自己紹介</h3>
-                   私は異なる分野で働いた経験があり、新しい職場にも柔軟に対応してきました。
-                   日本の職場でのチームワークや、丁寧なコミュニケーションにも慣れています。
-                   ITシステムを学ぶ学生として、新しい技術に関心を持ち、学習を続けています。
-                   これからは、学んだことを活かし、少しずつ成長しながら貢献していきたいです。
-
+                    <p>私は異なる分野で働いた経験があり、新しい職場にも柔軟に対応してきました。
+                    日本の職場でのチームワークや、丁寧なコミュニケーションにも慣れています。</p>
+                    <p>ITシステムを学ぶ学生として、新しい技術に関心を持ち、学習を続けています。
+                    学んだことを活かし、少しずつ成長しながら貢献していきたいです。</p>
                 </div>
+
                 <div class="skills-container reveal">
                     <h3>技術スタック</h3>
                     <ul class="skills-list">
-                        <li class="skill-tag">Next/react</li>
+                        <li class="skill-tag">Next / React</li>
+                        <li class="skill-tag">MongoDB</li>
                         <li class="skill-tag">Node.js</li>
                         <li class="skill-tag">Express.js</li>
-                        <li class="skill-tag">EJS</li>
-                        <li class="skill-tag">JavaScript (ES6)</li>
-                        <li class="skill-tag">CSS3 / Flexbox / Grid</li>
+                        <li class="skill-tag">Java</li>
+                        <li class="skill-tag">JavaScript</li>
+                        <li class="skill-tag">HTML / CSS</li>
                         <li class="skill-tag">Git &amp; GitHub</li>
-                        <li class="skill-tag">Render (CI/CD)</li>
                     </ul>
                 </div>
+
+                <div class="skills-container reveal">
+                    <h3>言語スキル</h3>
+                    <ul class="lang-list">
+                        <li class="lang-item">
+                            <div class="lang-header">
+                                <span class="lang-name">ネパール語</span>
+                                <span class="lang-level native">母国語</span>
+                            </div>
+                        </li>
+                        <li class="lang-item">
+                            <div class="lang-header">
+                                <span class="lang-name">英語</span>
+                                <span class="lang-level fluent">流暢</span>
+                            </div>
+                            <p class="lang-desc">小学校から高校まで英語教育の学校で学習。</p>
+                        </li>
+                        <li class="lang-item">
+                            <div class="lang-header">
+                                <span class="lang-name">日本語</span>
+                                <span class="lang-level intermediate">中級</span>
+                            </div>
+                            <p class="lang-desc">JLPT N3 合格。</p>
+                        </li>
+                        <li class="lang-item">
+                            <div class="lang-header">
+                                <span class="lang-name">ヒンディー語</span>
+                                <span class="lang-level fluent">流暢</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skills-container reveal">
+                    <h3>将来の目標</h3>
+                    <ul class="lang-list">
+                        <li class="lang-item">
+                            <div class="lang-header">
+                                <span class="lang-name">日本語 JLPT N2</span>
+                                <span class="lang-level intermediate">目標 2026</span>
+                            </div>
+                            <p class="lang-desc">2026年までにJLPT N2に合格したいです。</p>
+                        </li>
+                        <li class="lang-item">
+                            <div class="lang-header">
+                                <span class="lang-name">AIエージェント</span>
+                                <span class="lang-level fluent">独学中</span>
+                            </div>
+                            <p class="lang-desc">AIエージェントや自律型AIに興味があり、
+                            YouTubeやインターネットを通して少しずつ学んでいます。</p>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
         </section>
 
@@ -80,11 +137,12 @@
                 <div class="project-card reveal">
                     <div class="project-card-icon">✅</div>
                     <h3>タスク管理</h3>
-                    <p>学校の課題や日々のタスクを管理するための生産性ツール。
-                    ブラウザのLocalStorageを活用したデータ永続化を実装予定。</p>
+                    <p>タスクの作成・期限設定・進捗確認をシンプルな操作で行えるWebアプリ。
+                    個人アカウントによるプライバシー保護と期限超過アラートにより、
+                    確実なタスク管理をサポートします。</p>
                     <div class="card-tags">
-                        <span class="card-tag blue">JavaScript (ES6)</span>
-                        <span class="card-tag violet">LocalStorage</span>
+                        <span class="card-tag blue">Next / React</span>
+                        <span class="card-tag violet">MongoDB</span>
                     </div>
                     <div class="card-buttons">
                         <a href="https://taskmanager-six-tan.vercel.app/auth" class="link" target="_blank" rel="noopener noreferrer">ライブで見る →</a>
@@ -102,7 +160,7 @@
             <div class="contact-buttons">
                 <a href="mailto:blontamang4@gmail.com" class="btn">メールを送る</a>
                 <a href="tel:080-XXXX-XXXX" class="btn ghost">080-XXXX-XXXX</a>
-                <a href="https://github.com/Blon11-ux" class="btn ghost" target="_blank" rel="noopener noreferrer">GitHub</a>
+               
             </div>
         </section>
 
